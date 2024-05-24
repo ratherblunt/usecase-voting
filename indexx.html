@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Äänestyssovellus</title>
+</head>
+<body>
+    <div class="text">
+        <div id="kvalinta">
+            <input id="salasana" type="password" placeholder="Salasana" aria-label="Salasana">
+            <input id="yp" type="button" value="Kirjaudu ylläpitäjänä">
+        </div>
+    
+        <div id="yllapitajasivu" style="display: none;">
+            <input id="kirjauduUlos" type="button" value="Kirjaudu ulos">
+            <p>Ylläpitäjä</p>
+            <input id="voteText" type="text" placeholder="Äänestys" aria-label="Äänestys">
+            <input id="addVoteBtn" type="button" value="Luo äänestys">
+            <input id="removeVoteBtn" type="button" value="Poista äänestys">
+            <br>
+            <input id="vaihtoEhto1" type="text" placeholder="Vaihtoehto 1" aria-label="Vaihtoehto 1">
+            <input id="vaihtoEhto2" type="text" placeholder="Vaihtoehto 2" aria-label="Vaihtoehto 2">
+        </div>
+    
+        <div id="aanestyslista"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(35deg, black, red);
+    font-weight: normal;
+}
+
+.teksti {
+    margin: 100px;
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    row-gap: 20px;
+}
+
+button, input[type=submit], input[type=button] {
+    border: none;
+    border-radius: 0;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+input[type=text], input[type=password], select {
+    border: none;
+    border-radius: 0;
+    padding: 2px;
+    outline: none;
+}
+
+#salasana, #voteText, #vaihtoEhto1, #vaihtoEhto2 {
+    padding: 6px;
+}
+
+#vaihtoEhto1, #vaihtoEhto2 {
+    margin: 4px;
+}
+
+#kirjauduUlos, #addVoteBtn, #removeVoteBtn, #yp {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    padding: 4px;
+    font-size: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+#kirjauduUlos {
+    background-color: #bd3535;
+    color: rgb(255, 255, 255);
+}
+
+#kirjauduUlos:hover {
+    border-color: rgb(255, 0, 0);
+    background-color: red;
+}
+
+#addVoteBtn, #removeVoteBtn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#addVoteBtn:hover, #removeVoteBtn:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: #111;
+}
+
+#yp {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+#yp:hover {
+    border-color: black;
+    background-color: white;
+    color: #111;
+}
+
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    padding: 40px;
+}
+
+.nottext {
+    max-width: 400px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.nappi input[type=button] {
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: width 100ms, height 100ms, font-size 100ms;
+}
+
+.nappi input[type=button]:active {
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+}
+
+@media (max-width: 1220px) {
+    .grid {
+        width: auto;
+    }
+}
